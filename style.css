@@ -1,0 +1,171 @@
+@font-face {
+    font-family:myfont;
+    src: url(./fonts/CaviarDreams.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color:rgba(143, 143, 143, 0.316); 
+}
+
+.topo {
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+header h1 {
+    font-size: 4.5em; 
+    margin-bottom: 10px; 
+    font-family:myfont;
+}
+
+.header p {
+    font-size: 2.0em;
+    margin-top: 10px; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    background-color: #e0e0e000; 
+    padding: 90px 90px; 
+    text-align: justify;
+    border: 3px solid #333; 
+    border-radius: 10px;
+    margin: 15px; 
+    transition: transform 0.3s, box-shadow 0.10s; 
+}
+
+.box:hover {
+    transform: translateY(-20px); 
+    box-shadow: 20px 20px 20px 10px  black ; 
+}
+
+.box h2 {
+    font-size: 2.5em; 
+    margin-bottom: 15px; 
+    color: #333; 
+    font-family:myfont;
+}
+
+.footer {
+    background-color: #1a1a1a; 
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 1.9em;
+    border: #000000 6px solid;
+    border-style:dotted;
+     
+}
+
+.parallax {
+    height: 30vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+
+.footer:hover{
+transform: rotateX('45');
+
+}
+
+.parallax2{
+    background-image: url(https://cdn.pixabay.com/photo/2014/11/24/18/50/mind-544404_1280.png);
+    background-attachment: fixed;
+}
+.parallax3{
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/03/00/48/fingers-3285615_1280.png);
+    height: 190px;
+}
+.box p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+@media (max-width: 1200px){
+	main {
+		padding: 30px 20px;
+	}
+
+	.grid {
+		grid-template-columns: repeat(3, 1vh);
+	}
+}
+
+@media (max-width: 990px){
+	main {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 800px){
+	.grid {
+		grid-template-columns: repeat(2, 1vh);
+	}
+}
+
+@media (max-width: 480px){
+	.grid {
+	grid-template-columns: 1vh;
+	}
+    .box{
+        justify-content: center;
+        display: flex;
+        text-align:start;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px 10px;
+
+
+    }
+    .parallax3{
+        background-position: center;
+background-size: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
